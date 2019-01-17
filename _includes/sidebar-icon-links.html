@@ -5,12 +5,21 @@
        href="{{ site.hydeout.repo }}">
       {% include svg/github.svg %}
     </a>
+  {% endif %}
+  {% if site.hydeout.linkedin %}
+    <a id="linkedin-link"
+       class="icon" title="Linkedin" aria-label="Linkedin"
+       href="{{ site.hydeout.linkedin }}">
+      {% include svg/linkedin.svg %}
+    </a>
+  {% endif %}
+  {% comment %}
     <a id="github-download-link"
        class="icon" title="Download" aria-label="Download"
        href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
       {% include svg/download.svg %}
     </a>
-  {% endif %}
+  {% endcomment %}
 
   <a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"

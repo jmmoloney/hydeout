@@ -21,7 +21,10 @@ author:
 paginate:         5
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
-
+hydeout:
+  repo: "https://github.com/jmmoloney"
+  linkedin: "https://www.linkedin.com/in/jessicamoloney/"
+  
 plugins:
   - jekyll-feed
   - jekyll-gist
