@@ -47,9 +47,11 @@ body {
     margin-bottom: $heading-spacing;
 
     .back-arrow { margin-right: 0.5rem; }
-  }
+
   .circular--square {
-  border-radius: 50%;}
+    border-radius: 50%;}
+  }
+
 }
 
 // Container is flexbox as well -- we want content div to stretch and fill
