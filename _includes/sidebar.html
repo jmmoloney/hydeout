@@ -1,6 +1,8 @@
 <div id="sidebar">
   <header>
-    <img src="{{ site.baseurl }}/assets/images/profile.jpg" class="circular--square" />
+    <circular--square>
+    <img src="{{ site.baseurl }}/assets/images/profile.jpg"/>
+    </circular--square>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
