@@ -48,6 +48,8 @@ body {
 
     .back-arrow { margin-right: 0.5rem; }
   }
+  .circular--square {
+  border-radius: 50%;}
 }
 
 // Container is flexbox as well -- we want content div to stretch and fill
@@ -143,8 +145,8 @@ body {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     > * {
-      max-height: 100vh; 
-      overflow-y: auto; 
+      max-height: 100vh;
+      overflow-y: auto;
       -webkit-overflow-scrolling: touch;
     }
   }
