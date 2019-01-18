@@ -116,6 +116,9 @@ a[href^="#fnref:"] {
   font-weight: 300;
 }
 
+.circular--square {
+border-radius: 50%;}
+
 // SVG Icons
 a svg, .icon svg {
   height: 1em;
