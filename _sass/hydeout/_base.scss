@@ -57,10 +57,12 @@ img {
 }
 
 side-img {
+  opacity: 1;
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
+  transition: .5s ease;
   height: auto; // Fix to keep max-width from squishing images with defined
                 // height in HTML
 }
