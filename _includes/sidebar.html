@@ -1,5 +1,29 @@
+<style>
+
+.side-image {
+  opacity: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+}
+
+.side-image:hover {
+  background: transparent;
+  opacity: 0.5;
+}
+</style>
+
 <div id="sidebar">
   <header>
+    <center>
+    <a id="profile-pic"
+       href="{{ site.baseurl }}/assets/images/profile.png"
+       target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/profile.png" alt="profile" height="250" width="250" class="side-image"/>
+    </a>
+    </center>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
