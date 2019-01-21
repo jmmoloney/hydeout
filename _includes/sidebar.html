@@ -1,15 +1,16 @@
 <div id="sidebar">
   <header>
+    <a id="profile-pic"
+       href="{{ site.baseurl }}/assets/images/profile.png"
+       class="side-img">
+      <img src="{{ site.baseurl }}/assets/images/profile.png" alt="profile" height="250" width="250"/>
+    </a>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
         {% endunless %}
         {{ site.title }}
-      </a>
-      <a id="profile-pic"
-         href="{{ site.baseurl }}/assets/images/profile.png"">
-        <img src="{{ site.baseurl }}/assets/images/profile.png" alt="profile" height="250" width="250" class="side-img"/>
       </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
