@@ -17,6 +17,7 @@
 
 <div id="sidebar">
   <header>
+    <{% if page.layout == "index" %}
     <center>
     <a id="profile-pic"
        href="{{ site.baseurl }}/assets/images/profile.png"
@@ -24,7 +25,7 @@
       <img src="{{ site.baseurl }}/assets/images/profile.png" alt="profile" height="250" width="250" class="side-image"/>
     </a>
     </center>
-    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
+    h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
