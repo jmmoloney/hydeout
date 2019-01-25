@@ -18,7 +18,9 @@
 <div id="sidebar">
   <header>
     <center>
-      <img src="{{ site.baseurl }}/assets/images/profile.png" alt="profile" height="250" width="250" class="side-image"/>
+      <a href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/assets/images/profile.png" alt="profile" height="250" width="250" class="side-image"/>
+      </a>
     </center>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
